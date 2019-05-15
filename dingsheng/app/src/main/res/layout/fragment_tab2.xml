@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:overScrollMode="never"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:focusable="true"
+                  android:focusableInTouchMode="true"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+        <LinearLayout style="@style/TabLL">
+            <com.demo.dingsheng.view.SmoothCheckBox android:id="@+id/check1" android:layout_gravity="center"
+                                                    android:layout_width="30dp" android:layout_height="30dp"/>
+            <TextView android:id="@+id/tv" android:paddingLeft="5dp" android:layout_gravity="center"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="自动平台签到"/>
+        </LinearLayout>
+        <!--<LinearLayout style="@style/TabLL">-->
+            <!--<com.demo.dingsheng.view.SmoothCheckBox android:id="@+id/check2" android:layout_gravity="center"-->
+                                                    <!--android:layout_width="30dp" android:layout_height="30dp"/>-->
+            <!--<TextView android:paddingLeft="5dp" android:layout_gravity="center"-->
+                      <!--android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+                      <!--android:text="随机阅读"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout style="@style/TabLL">-->
+            <!--<com.demo.dingsheng.view.SmoothCheckBox android:id="@+id/check3" android:layout_gravity="center"-->
+                                                    <!--android:layout_width="30dp" android:layout_height="30dp"/>-->
+            <!--<TextView android:paddingLeft="5dp" android:layout_gravity="center"-->
+                      <!--android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+                      <!--android:text="启用4G网络阅读模式(使用流量阅读时勾选)"/>-->
+        <!--</LinearLayout>-->
+        <LinearLayout style="@style/TabLL">
+            <com.demo.dingsheng.view.SmoothCheckBox android:id="@+id/check4" android:layout_gravity="center"
+                                                    android:layout_width="30dp" android:layout_height="30dp"/>
+            <TextView android:paddingLeft="5dp" android:layout_gravity="center"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="开启自动领取时段奖励"/>
+        </LinearLayout>
+        <LinearLayout style="@style/TabLL">
+            <com.demo.dingsheng.view.SmoothCheckBox android:id="@+id/check5" android:layout_gravity="center"
+                                                    android:layout_width="30dp" android:layout_height="30dp"/>
+            <TextView android:paddingLeft="5dp" android:layout_gravity="center"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="自动清理垃圾"/>
+        </LinearLayout>
+        <LinearLayout style="@style/TabLL">
+            <com.demo.dingsheng.view.SmoothCheckBox android:id="@+id/check6" android:layout_gravity="center"
+                                                    android:layout_width="30dp" android:layout_height="30dp"/>
+            <TextView android:paddingLeft="5dp" android:layout_gravity="center"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="平台卡住(30秒左右自动重启清理平台)"/>
+        </LinearLayout>
+        <LinearLayout style="@style/TabLL">
+            <com.demo.dingsheng.view.SmoothCheckBox android:id="@+id/check7" android:layout_gravity="center"
+                                                    android:layout_width="30dp" android:layout_height="30dp"/>
+            <TextView android:paddingLeft="5dp" android:layout_gravity="center"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="自动清理后台"/>
+        </LinearLayout>
+
+        <!--<LinearLayout style="@style/TabLL">-->
+
+            <!--<TextView android:paddingLeft="5dp" android:layout_gravity="center"-->
+                      <!--android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+                      <!--android:text="全局延迟"/>-->
+            <!--<EditText android:inputType="number" android:gravity="center" android:layout_width="wrap_content"-->
+                      <!--android:layout_height="wrap_content"-->
+                      <!--android:textSize="12sp" android:text="2"/>-->
+            <!--<TextView android:layout_gravity="center" android:layout_width="wrap_content"-->
+                      <!--android:layout_height="wrap_content"-->
+                      <!--android:text="-"/>-->
+            <!--<EditText android:inputType="number" android:gravity="center" android:layout_width="wrap_content"-->
+                      <!--android:layout_height="wrap_content"-->
+                      <!--android:textSize="12sp" android:text="2"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout style="@style/TabLL">-->
+
+            <!--<TextView android:paddingLeft="5dp" android:layout_gravity="center"-->
+                      <!--android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+                      <!--android:text="脚本循环次数"/>-->
+            <!--<EditText android:inputType="number" android:gravity="center" android:layout_width="wrap_content"-->
+                      <!--android:layout_height="wrap_content"-->
+                      <!--android:textSize="12sp" android:text="2"/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</ScrollView>

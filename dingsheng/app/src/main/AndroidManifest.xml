@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.demo.dingsheng"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
+    <uses-permission android:name="android.permission.READ_LOGS"/>  
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+
+    <!--bugly-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+
+    <!--<uses-sdk-->
+            <!--android:minSdkVersion="8"-->
+            <!--android:targetSdkVersion="8" />-->
+
+    <application
+            android:name=".App"
+            android:allowBackup="true"
+            android:icon="@mipmap/icon"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:theme="@style/AppTheme">
+
+        <!--bugly-->
+        <activity
+                android:name="com.tencent.bugly.beta.ui.BetaActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize|locale"
+                android:theme="@android:style/Theme.Translucent" />
+        <!--bugly-->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity">
+
+        </activity>
+        <activity android:name=".FloatViewActivity">
+
+        </activity>
+        <activity android:name=".AActivity">
+
+        </activity>
+        <service android:name=".service.AutoService"/>
+        <service android:name=".service.TestService"/>
+        <service android:name=".service.FloatWindowService"/>
+        <!--悬浮窗服务-->
+        <service android:name=".service.FloatWindowService2"/>
+        <service android:name=".service.PollingService"/>
+        <!--前几个app服务-->
+        <service android:name=".service.BeforeService"/>
+        <!--后几个app服务-->
+        <service android:name=".service.AfterService"/>
+
+        <service android:name=".service.TimingService" android:priority = "1000"></service>
+        <service android:name=".timer.MainService"/>
+        <!--定时广播-->
+        <receiver android:name=".receiver.ScreenControlAlarmReceiver">
+            <intent-filter>
+                <action android:name="intent_alarm_log"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

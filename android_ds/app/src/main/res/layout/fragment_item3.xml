@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+
+    <LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_weight="1"
+        android:text="音量增减控制脚本"/>
+
+        <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="20dp"
+                android:textOn=""
+                android:textOff=""
+                />
+    </LinearLayout>
+    <LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="虚拟浮窗控制脚本"/>
+
+        <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="20dp"
+                android:textOn=""
+                android:textOff=""
+             />
+        <!--<Switch-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:switchMinWidth="20dp"-->
+                <!--android:textOn=""-->
+                <!--android:textOff=""-->
+                <!--android:thumb="@drawable/thumb"-->
+                <!--android:track="@drawable/track" />-->
+    </LinearLayout>
+    <LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="启动摇一摇运行脚本"/>
+
+        <Switch
+                android:id="@+id/switch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="20dp"
+                android:textOn=""
+                android:textOff=""
+                 />
+    </LinearLayout>
+    <LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="来电时停止运行脚本"/>
+
+        <Switch
+                android:id="@+id/switch4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="20dp"
+                android:textOn=""
+                android:textOff=""
+                />
+    </LinearLayout>
+    <LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="启动脚本时震动"/>
+
+        <Switch
+                android:id="@+id/switch5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="20dp"
+                android:textOn=""
+                android:textOff=""
+              />
+    </LinearLayout>
+
+    <!--<View android:layout_width="match_parent" android:layout_height="0.1dp"-->
+    <!--android:background="@color/line"/>-->
+
+    <!--<LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">-->
+        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+                  <!--android:layout_weight="1"-->
+                  <!--android:text="脚本日志"/>-->
+
+        <!--<ImageView android:layout_width="20dp" android:layout_height="20dp"-->
+        <!--android:src="@drawable/icon_next_step"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">-->
+        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+                  <!--android:layout_weight="1"-->
+                  <!--android:text="检测更新"/>-->
+
+        <!--<ImageView android:layout_width="20dp" android:layout_height="20dp"-->
+                   <!--android:src="@drawable/icon_next_step"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">-->
+        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+                  <!--android:layout_weight="1"-->
+                  <!--android:text="用户反馈"/>-->
+
+        <!--<ImageView android:layout_width="20dp" android:layout_height="20dp"-->
+                   <!--android:src="@drawable/icon_next_step"/>-->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

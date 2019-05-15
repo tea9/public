@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:padding="20dp"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+
+    <!--android:checkMark="?android:attr/listChoiceIndicatorMultiple"-->
+    <!--<CheckedTextView android:id="@+id/xx"  android:layout_width="match_parent"-->
+                      <!--android:layout_height="?android:attr/listPreferredItemHeightSmall"-->
+                      <!--android:textAppearance="?android:attr/textAppearanceListItemSmall"-->
+                      <!--android:gravity="center_vertical"-->
+                      <!--android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"-->
+                      <!--android:layout_marginRight="10dp"-->
+                      <!--android:layout_marginTop="10dp"-->
+                     <!---->
+                      <!--android:text="aaaaaaaa"/>-->
+
+    <!--<CheckBox-->
+            <!--android:id="@+id/checkBox1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="篮球" />-->
+    <com.demo.dingsheng.view.SmoothCheckBox android:visibility="gone" android:id="@+id/xx" android:layout_width="30dp" android:layout_height="30dp"/>
+
+    <Switch
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="20dp"
+            android:textOn=""
+            android:textOff=""
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track" />
+
+    <!-- 用于对比使用的不设置任何属性的Switch -->
+    <Switch
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    />
+
+    <Button android:id="@+id/btn" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="系统弹窗"/>
+    <Button android:id="@+id/btn1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="adb 测试"/>
+
+    <Button android:id="@+id/btn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="定时轮询服务"/>
+
+    <Button android:id="@+id/btn3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第一个服务"/>
+
+    <Button android:id="@+id/btn4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="悬浮窗"/>
+    <Button android:id="@+id/btn5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="autoservice"/>
+    <Button android:id="@+id/btn6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="stopautoservice"/>
+    <Button android:id="@+id/btn7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="timingservice"/>
+    <Button android:id="@+id/btn8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="main服务"/>
+    <Button android:id="@+id/btn9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="定时器开启"/>
+    <Button android:id="@+id/btn10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="定时器关闭"/>
+
+
+</LinearLayout>

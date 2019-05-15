@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <Button android:id="@+id/btn1" android:visibility="gone"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启服务"/>
+    <Button android:id="@+id/btn2" android:visibility="gone"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="执行操作"/>
+    <Button android:id="@+id/btn3"  android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="前6个"/>
+    <Button android:id="@+id/btn4" android:visibility="gone"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="后9个"/>
+    <Button android:id="@+id/btn5" android:visibility="gone"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一起"/>
+    <Button android:id="@+id/btn6" android:visibility="gone"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Allservice"/>
+    <Button android:id="@+id/btn7" android:visibility="gone"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AllTask"/>
+    <Button android:id="@+id/btn8" android:visibility="gone"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AllTask cancel"/>
+    <Button android:id="@+id/btn9" android:visibility="visible"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Allservice2"/>
+
+</LinearLayout>

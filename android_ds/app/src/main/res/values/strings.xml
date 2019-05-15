@@ -1,0 +1,19 @@
+<resources>
+    <!--<string name="app_name">dingsheng2</string>-->
+
+    <string name="app_name">鼎盛科技</string>
+
+    <string name="title">鼎盛科技</string>
+    <string name="main_tv1">功能设置</string>
+    <string name="main_tv2">使用说明</string>
+    <string name="main_tv3">软件设置</string>
+    <string name="fragment_btn1">启动功能</string>
+    <string name="instructions">脚本启动期间请不要修改任何参数，需要修改参数请停止脚本 &lt;br&gt; 循环次数默认50 &lt;br&gt;
+        全局延迟可以设置2800-3000(或者默认不能设置太小)&lt;br&gt;其他设置根据个人收益进行设置&lt;br&gt;建议多台手机 可以设置组合收徒比如(A手机是师傅 B C 手机填写A手机的要定吗 不过不建议一个手机收太多徒弟, 有可能会封号)</string>
+
+    <string name="str_to">至</string>
+    <string name="str_min">分钟</string>
+
+    <string name="str_submit">提交</string>
+    <string name="btn_verify">验证</string>
+</resources>
